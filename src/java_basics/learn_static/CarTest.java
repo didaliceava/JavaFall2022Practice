@@ -14,6 +14,11 @@ public class CarTest {
         ford.manufacturer = "Ford";
         ford.color = "Black";
 
+        /*
+         Do not use objects to call static members of a class. Instead, use the class name
+
+         In the example below, the correct call would be Car.typeOfVehicle
+         */
         System.out.println(bmw.typeOfVehicle);
         System.out.println(ford.typeOfVehicle);
 
@@ -21,9 +26,10 @@ public class CarTest {
 
         System.out.println(ford.typeOfVehicle);
 
-        /* Calling non-static members of a class (non-static
-         members belong to each instance of the class, and not
-         the class itself
+        /*
+        Call non-static members of a class using objects of that class
+
+        (Non-static members belong to each instance of the class, and not the class itself)
          */
         bmw.startEngine();
 
