@@ -2,7 +2,7 @@ package java_basics;
 
 public class LearnStringMethods {
 
-    static String student = "Humama";
+    static String student = "Hamama";
 
     public static void main(String[] args) {
         int length = student.length();
