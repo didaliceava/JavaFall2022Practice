@@ -2,10 +2,6 @@ package java_basics.learn_oops.inheritance;
 
 public class Animal {
 
-    void speak() {
-        System.out.println("Animal is speaking");
-    }
-
     String color;
     int weight;
     int numOfEyes;
@@ -18,6 +14,10 @@ public class Animal {
         this.numOfEyes = numOfEyes;
         this.numOfLegs = numOfLegs;
         this.hasTail = hasTail;
+    }
+
+    void speak() {
+        System.out.println("Animal is speaking");
     }
 
     void eat() {

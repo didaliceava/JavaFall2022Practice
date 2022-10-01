@@ -3,11 +3,11 @@ package java_basics.group_exercises;
 public class GetDaysInMonth {
 
     public static void main(String[] args) {
-        int month = 12;
-        int year = 10000;
+        int month = 2;
+        int year = 2024;
 
         GetDaysInMonth obj = new GetDaysInMonth();
-        System.out.println(obj.getDaysInMonth(month, year)); // 30
+        System.out.println(obj.getDaysInMonth(month, year));
     }
 
     public int getDaysInMonth(int month, int year) {

@@ -7,7 +7,7 @@ public class TestInheritance {
 //        animal.speak();
 
         Cat garfield = new Cat("Orange", 55, 2, 4, true, true);
-        garfield.speak();
+        garfield.purr();
 
 //        Animal animal = new Animal("White", 50, 2, 4, true);
 //        System.out.println(animal.color);

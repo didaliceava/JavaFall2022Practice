@@ -13,8 +13,7 @@ public class Cat extends Animal {
         this.hasFur = hasFur;
     }
 
-    void purr(int x, String y) {
-
+    void purr() {
     }
 
     void run() {
