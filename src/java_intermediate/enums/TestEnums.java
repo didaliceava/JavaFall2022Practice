@@ -3,8 +3,21 @@ package java_intermediate.enums;
 public class TestEnums {
 
     public static void main(String[] args) {
-        Month month = Month.JANUARY;
-        System.out.println("January");
+//        Month month = Month.JANUARY;
+//        System.out.println("January");
+
+        String month = "July";
+
+        Month[] months = Month.values();
+
+        for (Month m : months) {
+            if (month.equalsIgnoreCase(String.valueOf(m))) {
+                System.out.println(month);
+                break;
+            }
+        }
+
+
 
     }
 
