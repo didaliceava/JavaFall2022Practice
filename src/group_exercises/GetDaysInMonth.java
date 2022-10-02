@@ -1,4 +1,4 @@
-package java_basics.group_exercises;
+package group_exercises;
 
 public class GetDaysInMonth {
 
