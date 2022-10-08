@@ -1,7 +1,6 @@
 package java_intermediate.data_structures;
 
 import java.util.ArrayDeque;
-import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class LearnQueues {
