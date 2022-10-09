@@ -33,7 +33,7 @@ public class DataReader {
      *
      * @param path Path to file
      * @param sheetName Sheet name to read from
-     * @return All populated String cell values
+     * @return All populated String cell values, excluding 1st row
      */
     public String[][] readStringArrays(String path, String sheetName) throws IOException {
         String[][] data;
@@ -48,6 +48,7 @@ public class DataReader {
 
         for (int i = 1; i <= numberOfRows; i++) {
             row = sheet.getRow(i);
+
             for (int j = 0; j < numberOfCol; j++) {
                 cell = row.getCell(j);
                 String cellData = getCellValue(cell);
@@ -95,12 +96,12 @@ public class DataReader {
     /**
      * @throws IOException
      *
-     * Read all cells in the last row (String values only) and return the results as a String Array. This method
-     * is most likely to be used when there is only 1 row in the sheet
+     * Read all cells in the first column (String values only) and return the results as a String Array. This method
+     * is most likely to be used when there is only 1 column in the sheet
      *
      * @param path Path to file
      * @param sheetName Sheet name to read from
-     * @return All populated String cells in the last row of the sheet
+     * @return All populated String cells in the first column of the sheet
      */
     public String[] readStringArray(String path, String sheetName) throws IOException {
         String[] data;
@@ -126,12 +127,12 @@ public class DataReader {
     /**
      * @throws IOException
      *
-     * Read all cells in the last row (integer values only) and return the results as an integer Array. This method
-     * is most likely to be used when there is only 1 row in the sheet
+     * Read all cells in the first column (integer values only) and return the results as an integer Array. This method
+     * is most likely to be used when there is only 1 column in the sheet
      *
      * @param path Path to file
      * @param sheetName Sheet name to read from
-     * @return All populated cells (integer values only) in the last row of the sheet
+     * @return All populated cells (integer values only) in the first column of the sheet
      */
     public int[] readIntegerArray(String path, String sheetName) throws IOException {
         int[] data;

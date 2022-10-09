@@ -11,17 +11,24 @@ public class LearnExcelIO {
         String filePath = projectPath + relPath;
 
         DataReader dr = new DataReader();
-
         String sheetName = "Students";
 
-        String[][] data = dr.readStringArrays(filePath, sheetName);
+//        String[][] data = dr.readStringArrays(filePath, sheetName);
+//
+//        for (String[] row : data) {
+//
+//            for (String cell : row) {
+//                System.out.print(cell + "\t\t");
+//            }
+//            System.out.println();
+//        }
 
-        for (String[] row : data) {
+        String[] singleRow = dr.readStringArray(filePath, sheetName);
 
-            for (String cell : row) {
-                System.out.print(cell + "\t\t");
-            }
-            System.out.println();
+        for (String s : singleRow) {
+            System.out.println(s);
         }
+
+
     }
 }

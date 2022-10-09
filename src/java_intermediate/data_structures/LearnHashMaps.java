@@ -1,6 +1,7 @@
 package java_intermediate.data_structures;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class LearnHashMaps {
 
@@ -22,8 +23,9 @@ public class LearnHashMaps {
 
         System.out.println(myHashmap.get(92));
 
-//        for (int k : myHashmap.keySet()) {
-//            System.out.println(k);
+//        for (Map.Entry<Integer, String> entry : myHashmap.entrySet()) {
+//            System.out.println("KEY: " + entry.getKey() + "\nVALUE: " + entry.getValue());
+//            System.out.println();
 //        }
 
     }
