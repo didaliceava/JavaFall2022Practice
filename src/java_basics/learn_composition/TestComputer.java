@@ -1,7 +1,5 @@
 package java_basics.learn_composition;
 
-import java.util.Scanner;
-
 public class TestComputer {
 
     public static void main(String[] args) {
