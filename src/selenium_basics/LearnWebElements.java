@@ -23,8 +23,8 @@ public class LearnWebElements {
 
         String url = "https://amazon.com";
 
-        // desktop-grid-1
-        // div[@id='desktop-grid-1']
+        // desktop-grid-1 --> ID
+        // div[@id='desktop-grid-1'] --> Xpath
         driver.get(url);
         List<WebElement> elements = driver.findElements(By.xpath("//div[@id='desktop-grid-1']//div[@class='a-cardui-body']//a"));
 
